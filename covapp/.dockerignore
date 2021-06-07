@@ -1,0 +1,9 @@
+.git
+.cache
+__pycache__/
+**/__pycache__
+**/*__pycache__
+**/*__pycache__*
+**/*__pycache__/
+**/__pycache__/
+Dockerfile
