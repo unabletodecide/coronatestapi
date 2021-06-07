@@ -2,19 +2,16 @@
 
 Hello Audience,
 
-Create a new virtualenv first. I recommend using mkvirtualenv which is a package inside virtualenvwrapper.
+There is only one dependency to run this app, actually 2:-
+1. docker
+2. docker-compose - version 3.x
 
-Anyways,
+Once you have them, ready. Git clone the repository and we are good to go.
 
-Once you have a new virtual environment, 
+FIRST, RUN: docker-compose build
+THEN, RUN: docker-compose up
 
-pip install -r requirements.txt
-
-Once done,
-
-cd covapp
-
-python manage.py runserver
+That's it!
 
 Visit: http://localhost:8000 For Home
 API Docs can be found and tested from Swagger documentation @ http://localhost:8000/schema/docs
