@@ -26,7 +26,7 @@ class CoronaAPI:
         try:
             final_url = self.access_url+'/countries/'+country_code+'?'+qstr
             print("Final URL is "+final_url)
-            r = requests.get(final_url, timeout=1)
+            r = requests.get(final_url, timeout=5)
         except:
             raise
         return [json.loads(r.text), r.status_code]
